@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@drawable/fundo_fade">
+
+    <ImageView
+        android:id="@+id/profileImage"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="10dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/foto"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/userName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/instrumentsans"
+        android:text="Julia.Oliveira"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/profileImage" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/tabela3"
+        app:layout_constraintTop_toBottomOf="@+id/userName"
+        tools:layout_editor_absoluteX="16dp"
+        />
+
+    <Button
+        android:id="@+id/btnProgress"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/btbordaround"
+        android:backgroundTint="#1B6DA0"
+        android:text="Progresso"
+        android:textColor="@android:color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <Button
+        android:id="@+id/btnCalendar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Calendário e Agenda"
+        android:background="@drawable/btbordaround"
+        android:textColor="@android:color/white"
+        android:backgroundTint="#1B6DA0"
+        app:layout_constraintTop_toBottomOf="@id/btnProgress"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="20dp" />
+
+    <Button
+        android:id="@+id/btnActivities"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Atividades"
+        android:background="@drawable/btbordaround"
+        android:backgroundTint="#1B6DA0"
+        android:textColor="@android:color/white"
+        app:layout_constraintTop_toBottomOf="@id/btnCalendar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="20dp" />
+
+    <Button
+        android:id="@+id/btnMaterials"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Revisão de Estudo"
+        android:background="@drawable/btbordaround"
+        android:textColor="@android:color/white"
+        android:backgroundTint="#1B6DA0"
+        app:layout_constraintTop_toBottomOf="@id/btnActivities"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="20dp" />
+
+    <Button
+        android:id="@+id/btnStudyGroups"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Grupos de Estudo"
+        android:background="@drawable/btbordaround"
+        android:textColor="@android:color/white"
+        android:backgroundTint="#1B6DA0"
+        app:layout_constraintTop_toBottomOf="@id/btnMaterials"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="20dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
